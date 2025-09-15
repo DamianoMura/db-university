@@ -5,3 +5,13 @@ SELECT `year`, COUNT(`id`)
 AS `signed_up_students_by_year`
 FROM `courses`
 GROUP BY `year`;
+
+Contare gli insegnanti che hanno l'ufficio nello stesso edificio:
+
+SELECT `office_address`, COUNT(`id`)
+AS `teachers_at_same_address`
+FROM `teachers`
+GROUP BY `office_address`;
+
+Calcolare la media dei voti di ogni appello d'esame:
+
